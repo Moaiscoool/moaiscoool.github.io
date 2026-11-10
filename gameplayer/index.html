@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website viewer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background: #000;
+    }
+
+    #stage {
+      position: fixed;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      background: #000;
+    }
+
+    #site {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main id="stage">
+    <iframe
+      id="site"
+      title="Website viewer"
+      src="https://demo.emulatorjs.org"
+      loading="eager">
+    </iframe>
+  </main>
+</body>
+</html>
